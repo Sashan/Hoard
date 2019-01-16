@@ -4,6 +4,7 @@ all:
 	for dir in $(DIRS); do \
 	  (cd $$dir; ${MAKE}); \
 	done
+	time ./run-tests.sh
 
 clean:
 	for dir in $(DIRS); do \
